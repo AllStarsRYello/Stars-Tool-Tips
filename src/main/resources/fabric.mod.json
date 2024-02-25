@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "starstooltips",
+	"version": "${version}",
+	"name": "Star's Tool Tips",
+	"description": "No, this is not another tooltip mod. It just adds new ways to upgrade your tools. Don't confuse the two.",
+	"authors": [
+		"AllStarsRYello"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/starstooltips/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.allstarsryello.starstooltips.StarsToolTips"
+		],
+		"client": [
+			"net.allstarsryello.starstooltips.StarsToolTipsClient"
+		],
+		"fabric-datagen": [
+			"net.allstarsryello.starstooltips.StarsToolTipsDataGenerator"
+		]
+	},
+	"mixins": [
+		"starstooltips.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
